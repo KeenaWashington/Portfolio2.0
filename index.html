@@ -1022,17 +1022,27 @@
                     }
 
                     const footerLinks = document.querySelectorAll('.footer-nav-link');
+
                     footerLinks.forEach(link => {
                       link.addEventListener('mouseenter', () => {
+                        // Prevent adding multiple arrows
+                        if (link.querySelector('.footer-hover-arrow')) return;
+                    
                         const icon = document.createElement('span');
-                        icon.innerHTML = ' &rarr;';
+                        icon.className = 'footer-hover-arrow';
+                        icon.textContent = ' →';
                         icon.style.opacity = '0';
                         icon.style.transition = 'opacity 0.2s ease';
+                    
                         link.appendChild(icon);
-                        setTimeout(() => icon.style.opacity = '1', 10);
+                    
+                        setTimeout(() => {
+                          icon.style.opacity = '1';
+                        }, 10);
                       });
+                    
                       link.addEventListener('mouseleave', () => {
-                        const icon = link.querySelector('span');
+                        const icon = link.querySelector('.footer-hover-arrow');
                         if (icon) icon.remove();
                       });
                     });
