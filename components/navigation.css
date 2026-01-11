@@ -2,19 +2,6 @@
   display: block;
 }
  
-.navigation-container2 {
-  display: none;
-}
- 
-.navigation-container3 {
-  display: contents;
-}
- 
-.navigationroot-class-name {
-  top: 0px;
-  z-index: 1000;
-  position: sticky;
-}
 
 .navigation-wrapper {
   position: fixed;
