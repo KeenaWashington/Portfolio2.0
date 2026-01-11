@@ -46,7 +46,7 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background: #160B21;
+    background: #000;
 }
 
 .kb-bubble { 
@@ -61,16 +61,16 @@ html, body {
 
 .kb-user { 
     align-self: flex-end;
-    background: #f3f3f3;
+    background: #a3a7f7;
     border-bottom-right-radius: 4px;
     color: #333447;
 }
 
 .kb-bot {
     align-self: flex-start;
-    background: #a3a7f7;
+    background: #160B21;
     border-bottom-left-radius: 4px;
-    color: #333447;
+    color: #FFF;
 }
 
 #keenabot-form { 
