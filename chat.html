@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KeenaBot</title>
+  <link rel="icon" type="image" href="Images/favicon.ico">
+  <link rel="stylesheet" href="./src/chat.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+      <h1>Chat with KeenaBot</h1>
+      <div class="kb-wrap">
+        <div id="keenabot-msgs" class="msgs"></div>
+        <div id="keenabot-typing">KeenaBot is typing…</div>
+        <form id="keenabot-form">
+          <div class="input-wrap">
+            <input id="keenabot-input" type="text" maxlength="300" placeholder="Ask about Keena…" autocomplete="off" />
+            <span id="charCount">0 / 300</span>
+          </div>
+          <button id="keenabot-send" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./src/chat-page.js"></script>
+</body>
+</html>
