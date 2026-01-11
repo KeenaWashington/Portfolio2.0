@@ -1009,14 +1009,10 @@
   padding-top: var(--spacing-2xl);
   justify-content: space-between;
 }
- 
 
- 
-
- 
-
- 
-
+html, body {
+  overflow-x: hidden;
+}
  
 .footer-legal-links {
   gap: var(--spacing-xl);
