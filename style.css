@@ -1155,7 +1155,7 @@
  
 .page-container {
   color: var(--color-on-surface);
-  overflow-x: hidden;
+  overflow-x: visible;
   background-color: var(--color-surface);
 }
  
