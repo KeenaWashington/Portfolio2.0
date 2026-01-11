@@ -1,5 +1,5 @@
 .navigation-container1 {
-  display: contents;
+  display: block;
 }
  
 .navigation-container2 {
@@ -20,4 +20,5 @@
   position: sticky;
   top: 0;
   z-index: 9999;
+  transform: none !important;
 }
