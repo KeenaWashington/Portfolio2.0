@@ -1717,4 +1717,35 @@ html, body {
   .intro-stats {
     grid-template-columns: 1fr;
   }
+
+  /* --- Fix bento text overflow on mobile --- */
+@media (max-width: 767px) {
+  /* Let grid rows expand based on content instead of feeling "fixed" */
+  .portfolio-bento-grid {
+    grid-auto-rows: minmax(360px, auto);
+  }
+
+  /* Give each card a minimum height but allow it to grow */
+  .bento-cell {
+    min-height: 360px;
+    height: auto;
+  }
+
+  /* Keep the overlay from letting text spill outside */
+  .bento-overlay {
+    overflow: auto;                 /* key line */
+    -webkit-overflow-scrolling: touch;
+    padding: var(--spacing-xl);
+  }
+
+  /* Optional: slightly reduce text size only inside the bento overlay */
+  .bento-overlay .section-content {
+    font-size: var(--font-size-sm);
+    line-height: 1.5;
+  }
+
+  .bento-overlay .bento-title {
+    font-size: var(--font-size-lg);
+  }
+}
 }
