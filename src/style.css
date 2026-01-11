@@ -121,14 +121,6 @@ html, body {
   background-color: var(--color-surface);
 }
 
-.btn-link {
-  color: var(--color-primary);
-  box-shadow: none;
-  border-color: transparent;
-  text-decoration: underline;
-  background-color: transparent;
-}
-
 .btn-sm { padding: var(--spacing-sm) var(--spacing-md); }
 .btn-lg { padding: var(--spacing-lg) var(--spacing-xl); }
 .btn-xl { padding: var(--spacing-xl) var(--spacing-2xl); }
@@ -163,11 +155,6 @@ html, body {
   color: var(--color-on-primary);
   border-color: var(--color-primary);
   background-color: var(--color-primary);
-}
-
-.btn-link:hover:not(:disabled) {
-  color: color-mix(in oklab, var(--color-primary) 80%, black);
-  text-decoration: underline;
 }
 
 /* Typography helpers you use */
@@ -995,11 +982,6 @@ html, body {
   .navigation-overlay-link { font-size: var(--font-size-2xl); }
 
   .footer-main-wrapper { padding-top: var(--spacing-3xl); }
-
-  .footer-legal-links {
-    gap: var(--spacing-sm);
-    flex-direction: column;
-  }
 
   .footer-logo-group { flex-direction: column; }
 
