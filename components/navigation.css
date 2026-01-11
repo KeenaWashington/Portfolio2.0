@@ -16,7 +16,7 @@
   position: sticky;
 }
 
-.navigation-wrapper {
+.navigation-container {
   position: sticky;
   top: 0;
   z-index: 9999;
