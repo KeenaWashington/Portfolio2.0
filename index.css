@@ -17,11 +17,9 @@
   display: contents;
 }
  
-.navigationroot-class-name {
-  top: 0px;
-  z-index: 1000;
-  position: sticky;
-}
+
+
+
 
 .footer-wrapper {
   display: contents;
