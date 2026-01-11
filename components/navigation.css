@@ -1,13 +1,17 @@
 .navigation-container1 {
-  display: block;
+  display: contents;
 }
  
-
-.navigation-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-  transform: none !important;
+.navigation-container2 {
+  display: none;
+}
+ 
+.navigation-container3 {
+  display: contents;
+}
+ 
+.navigationroot-class-name {
+  top: 0px;
+  z-index: 1000;
+  position: sticky;
 }
